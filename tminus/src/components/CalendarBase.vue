@@ -8,4 +8,4 @@
 export default {
     name: 'CalendarBase'
 }
-  </script>
+</script>

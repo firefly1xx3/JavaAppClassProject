@@ -23,29 +23,28 @@
         MY ACCOUNT
       </v-list-item>
       <v-list-item>
-        Home
+        <router-link to="/">Home</router-link>
       </v-list-item>
       <v-list-item>
-        Settings
+        <router-link to="/settings">Settings</router-link>
       </v-list-item>
     </v-list>
   </v-navigation-drawer>
 
     <v-main>
-      <CalendarBase/>
+      <router-view></router-view>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import CalendarBase from './components/CalendarBase';
 
 export default {
   name: 'App',
 
   components: {
-    CalendarBase,
-  },
+    //
+},
 
   data: () => ({
     //
