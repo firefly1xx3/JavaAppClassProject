@@ -4,32 +4,14 @@
       app
       color="#c53131"
       dark
-      clipped-right    
+      clipped-left    
     >
     <v-app-bar-title>
       T-Minus
     </v-app-bar-title>
     </v-app-bar>
 
-    <v-navigation-drawer
-      absolute
-      permanent
-      right
-      app
-      clipped
-    >
-    <v-list>
-      <v-list-item>
-        MY ACCOUNT
-      </v-list-item>
-      <v-list-item>
-        <router-link to="/">Home</router-link>
-      </v-list-item>
-      <v-list-item>
-        <router-link to="/settings">Settings</router-link>
-      </v-list-item>
-    </v-list>
-  </v-navigation-drawer>
+    <NavDrawer></NavDrawer>
 
     <v-main>
       <router-view></router-view>
@@ -39,11 +21,13 @@
 
 <script>
 
+import NavDrawer from './components/NavDrawer.vue'
+
 export default {
   name: 'App',
 
   components: {
-    //
+    NavDrawer
 },
 
   data: () => ({
