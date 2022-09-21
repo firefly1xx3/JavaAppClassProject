@@ -23,6 +23,16 @@
             <v-list-item link>
                 <v-list-item-content>
                     <router-link 
+                        to="/groups"
+                        style="text-decoration: none; color: inherit;"
+                    >
+                        My Groups
+                    </router-link>
+                </v-list-item-content>
+            </v-list-item>
+            <v-list-item link>
+                <v-list-item-content>
+                    <router-link 
                         to="/settings"
                         style="text-decoration: none; color: inherit;"
                     >

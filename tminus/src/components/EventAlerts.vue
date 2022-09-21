@@ -5,6 +5,7 @@
                 :color=event.color 
                 text
                 dense
+                style="margin-bottom:.75rem"
             >
                 {{`${new Date(event.start).toLocaleString()}: ${event.name}`}}
             </v-alert>

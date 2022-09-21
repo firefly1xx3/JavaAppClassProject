@@ -13,23 +13,20 @@
 
     <NavDrawer></NavDrawer>
 
-    <v-main>
+    <v-main style="overflow-y:auto">
       <router-view></router-view>
     </v-main>
   </v-app>
 </template>
 
 <script>
-
 import NavDrawer from './components/NavDrawer.vue'
 
 export default {
   name: 'App',
-
   components: {
     NavDrawer
-},
-
+  },
   data: () => ({
     //
   }),

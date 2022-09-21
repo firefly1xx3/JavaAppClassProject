@@ -2,6 +2,7 @@
 import VueRouter from 'vue-router';
 import DashBoard from '../pages/DashBoard.vue'
 import Settings from '../pages/AccountSettings.vue'
+import Groups from '../pages/Groups.vue'
 import Vue from 'vue'
 
 Vue.use(VueRouter)
@@ -16,6 +17,11 @@ const routes = [
     path: '/settings',
     name: 'Settings',
     component: Settings
+  },
+  {
+    path: '/groups',
+    name: 'Groups',
+    component: Groups
   }
 ]
 
